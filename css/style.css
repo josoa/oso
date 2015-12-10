@@ -22,11 +22,20 @@ em {
 li {
     font-family: 'Work Sans', sans-serif;
     list-style: none;
+    
 }
 
 a {
     text-decoration: none;
     text-transform: uppercase;
+}
+
+a:hover {
+    transition: border .3s;
+    transition-timing-function: ease-in;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #333;
+
 }
 
 /* svg */
@@ -39,6 +48,12 @@ img {
 
 /* layout */
 
+.group:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+
 .wrapper {
     width: 70%;
     max-width: 760px;
@@ -48,11 +63,16 @@ img {
 
 header {
     min-height: 55px;
+    margin-bottom: 15px;
 }
 
 nav {
     float: right;
-    width: 300px;
+    width: 241px;
+}
+
+ul {
+    padding: 0;
 }
 
 nav li {
@@ -77,4 +97,22 @@ body {
 
 a:link, a:active, a:target, a:visited {
     color: #555;
+}
+
+/* media queries */
+
+@media (max-width: 550px) {
+    img {
+        float: none;
+        margin: 0 auto;
+    }
+    
+    nav {
+        float: none;
+        margin: auto;
+    }
+    
+    header {
+        max-height: 200px;
+    }
 }
