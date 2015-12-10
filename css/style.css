@@ -1,0 +1,80 @@
+/* typography */
+
+body {
+    font-family: 'Alegreya', serif;
+}
+
+p {
+    font-style: 400;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    text-align: center;
+
+}
+
+em {
+    font-style: italic;
+    font-size: 2em;
+    line-height: 1.1em;
+
+}
+
+li {
+    font-family: 'Work Sans', sans-serif;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* svg */
+
+img {
+    width: 50px;
+    padding: 0 10px;
+    float: left;
+}
+
+/* layout */
+
+.wrapper {
+    width: 70%;
+    max-width: 760px;
+    margin: 10px auto;
+    padding: 2% 5%;
+}
+
+header {
+    min-height: 55px;
+}
+
+nav {
+    float: right;
+    width: 300px;
+}
+
+nav li {
+    float: left;
+    margin-left: 45px;
+}
+
+nav li:first-of-type {
+    margin-left: 0;
+}
+
+/* color */
+
+body {
+    background: #e5e5e5;
+    color: #333;
+}
+
+.wrapper {
+    background: #f2f2f2;
+}
+
+a:link, a:active, a:target, a:visited {
+    color: #555;
+}
